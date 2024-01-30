@@ -33,7 +33,7 @@ main#images-container {
     display: flex;
     width: min(calc(100% - 30px), 800px);
 
-    margin: 30px auto 30px auto;
+    margin: 30px auto 0 auto;
     box-sizing: border-box;
 
     flex-wrap: wrap;
@@ -87,42 +87,6 @@ main#images-container .image-container:hover > img {
 main#images-container > img.testing {
     border: 1px solid gray;
     border-radius: 6px;
-}
-
-footer#copyright-label {
-    text-align: center;
-    margin: 10px 0;
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-#overlay-img-container {
-    position: fixed;
-
-    top: 0; left: 0;
-    bottom: 0; right: 0;
-
-    background-color: rgba(0, 0, 0, 0.474);
-    transition: opacity 200ms ease;
-}
-
-#overlay-img {
-    position: absolute;
-
-    margin-top: 10px;
-    margin-left: 10px;
-    
-    width: calc(100% - 20px);
-    height: calc(100% - 125px);
-
-    box-sizing: border-box;
-    object-fit: contain;
-
-}
-
-.hidden {
-    display: none;
 }
 
 @media (max-width:831px) {
