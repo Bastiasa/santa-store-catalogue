@@ -1,14 +1,21 @@
 
 const imagesContainer = document.getElementById("images-container");
 
+const overlayImageContainer = document.getElementById("overlay-img-container");
+const overlayImage = document.getElementById("overlay-img");
+
+const closeOverlayButton = document.getElementById("close-overlay-button");
+const nextImageButton = document.getElementById("next-image-button");
+const prevImageButton = document.getElementById("prev-image-button");
+
 async function createImage(src) {
 
     const waitResult = await new Promise((resolve, reject)=> {
         fetch(src, {method:"HEAD"}).then(response=>{
-            resolve(true);
+            resolve(response.ok);
         }).catch(err=>{
             resolve(false);
-        })
+        });
     });
 
     if(!waitResult) {
@@ -50,8 +57,10 @@ async function main() {
     for (let imageNumber = parseInt(imagesStartName); imageNumber < imagesNum; imageNumber++) {
 
         const image = await createImage("images_folder/"+formatNumber(imageNumber)+".png");
+
         if(image) {
             imagesContainer.appendChild(image);
+            image.onclick = (e)=>setCurrentImage(image.children[0]);
         } else {
             continue;
         }
@@ -60,3 +69,34 @@ async function main() {
 }
 
 main();
+
+
+function setCurrentImage(imgElement) {
+    if(imgElement instanceof Image) {
+        overlayImageContainer.classList.remove("hidden");
+        overlayImage.src = imgElement.getAttribute("src");
+    } else {
+        console.log(imgElement, "is not an Image.");
+    }
+}
+
+
+closeOverlayButton.addEventListener("click", ()=>{
+    overlayImageContainer.classList.add("hidden");
+});
+
+nextImageButton.addEventListener("click", ()=>{
+    const currentImageContainer = imagesContainer.querySelector("img[src=\""+overlayImage.getAttribute("src")+"\"]").parentElement;
+    const currentImageIndex =  Array.from(imagesContainer.children).lastIndexOf(currentImageContainer);
+    let nextImageIndex = (currentImageIndex+1 > imagesContainer.children.length) ? 0 : currentImageIndex+1;
+
+    setCurrentImage(imagesContainer.children[nextImageIndex].children[0]);
+});
+
+prevImageButton.addEventListener("click", ()=>{
+    const currentImageContainer = imagesContainer.querySelector("img[src=\""+overlayImage.getAttribute("src")+"\"]").parentElement;
+    const currentImageIndex =  Array.from(imagesContainer.children).lastIndexOf(currentImageContainer);
+    let prevImageIndex = (currentImageIndex-1 < 0) ? imagesContainer.children.length-1 : currentImageIndex-1;
+
+    setCurrentImage(imagesContainer.children[prevImageIndex].children[0]);
+});
