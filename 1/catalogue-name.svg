@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="300"
+   viewBox="0 0 800 300.00001"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="catalogue-name.svg"
+   inkscape:export-filename="catalogue-name.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.35411406"
+     inkscape:cx="796.35359"
+     inkscape:cy="989.79409"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <rect
+       x="22.591591"
+       y="64.950825"
+       width="748.34646"
+       height="175.08483"
+       id="rect1" />
+    <rect
+       x="22.591591"
+       y="64.950825"
+       width="748.34646"
+       height="175.08483"
+       id="rect3" />
+  </defs>
+  <g
+     inkscape:label="dtf 2024"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <g
+       id="g1"
+       transform="translate(0,-12.788583)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#d7043c;stroke-width:20;stroke-opacity:1;paint-order:markers stroke fill"
+         d="M 27.238746,242.65892 H 772.76125"
+         id="path1" />
+      <text
+         xml:space="preserve"
+         id="text1"
+         style="font-size:190px;line-height:1;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#d40000;stroke-width:20;paint-order:markers stroke fill"
+         transform="matrix(1,0,-0.23587685,1,37.884461,-19.968334)"><tspan
+           x="130.36572"
+           y="227.12974"
+           id="tspan2">DTF 2024</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:label="cristiano gosper"
+     inkscape:groupmode="layer"
+     id="g3">
+    <g
+       id="g2"
+       transform="translate(0,-12.788583)">
+      <g
+         id="g4"
+         transform="translate(0,-18.005237)"
+         inkscape:export-filename="..\cristiano-gosper\catalogue-name.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <path
+           style="fill:none;fill-opacity:1;stroke:#d7043c;stroke-width:20;stroke-opacity:1;paint-order:markers stroke fill"
+           d="M 27.238746,242.65892 H 772.76125"
+           id="path2" />
+        <text
+           xml:space="preserve"
+           id="text2"
+           style="font-size:130px;line-height:1;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;text-align:center;letter-spacing:0px;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#d40000;stroke-width:20;paint-order:markers stroke fill"
+           transform="matrix(1,0,-0.23587685,1,33.456901,39.907793)"><tspan
+             x="42.724121"
+             y="175.91546"
+             id="tspan3">CRISTIANO GÓSPEL</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

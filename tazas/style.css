@@ -47,7 +47,6 @@ img#top-poster {
     -webkit-user-select: none;
 }
 
-
 main#images-container {
     display: flex;
     width: min(calc(100% - 30px), 800px);
@@ -169,7 +168,7 @@ footer#copyright-label {
     top: 0; left: 0;
     bottom: 0; right: 0;
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.474);
     transition: opacity 200ms ease;
 }
 
@@ -211,7 +210,8 @@ footer#copyright-label {
 
     width: 100%;
     height: 100%;
-
+    
+    filter: invert(1);
     pointer-events: none;
 }
 
