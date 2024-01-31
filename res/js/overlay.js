@@ -122,8 +122,8 @@ class OverlayImageView {
             this.showLoadingSpin();
         }
 
-        this.overlayNextButton.style.display = (this.currentIndex == -1 || isNaN(this.currentIndex)) ? "none" : undefined;
-        this.overlayPrevButton.style.display = (this.currentIndex == -1 || isNaN(this.currentIndex)) ? "none" : undefined;
+        this.overlayNextButton.style.display = (this.currentIndex == -1 || isNaN(this.currentIndex)) ? "none" : "unset";
+        this.overlayPrevButton.style.display = (this.currentIndex == -1 || isNaN(this.currentIndex)) ? "none" : "unset";
 
     }
 
