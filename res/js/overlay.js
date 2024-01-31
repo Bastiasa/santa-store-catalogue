@@ -120,6 +120,8 @@ class OverlayImageView {
             this.overlayImage.src = imageElement;
             this.currentIndex = -1;
             this.showLoadingSpin();
+        } else {
+            console.error("OverlayImageViewException: invalid setImage, ", imageElement, " is not a valid argument.");
         }
 
         this.overlayNextButton.style.display = (this.currentIndex == -1 || isNaN(this.currentIndex)) ? "none" : "unset";
@@ -152,7 +154,7 @@ class OverlayImageView {
         const containerElement = window.importer.parentElement;
 
         if(containerElement) {
-            const nextIndex = (this.currentIndex - 1 < 0) ? currentImageElement.children.length-1 : this.currentIndex - 1;
+            const nextIndex = (this.currentIndex - 1 < 1) ? containerElement.children.length-1 : this.currentIndex - 1;
             this.setImage(containerElement.children[nextIndex].querySelector("img"));
 
         } else {
