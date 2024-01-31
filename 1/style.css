@@ -184,10 +184,13 @@ footer#copyright-label {
     position: absolute;
     box-sizing: border-box;
 
-    width: 64px;
-    height: 64px;
+    --side:64px;
+
+    width: var(--side);
+    height: var(--side);
 
     cursor: pointer;
+    user-select: none;
 }
 
 #overlay-img-container a img {
