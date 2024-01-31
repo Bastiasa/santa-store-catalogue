@@ -136,10 +136,6 @@ closeOverlayButton.addEventListener("click", ()=>{
     overlayImageContainer.classList.add("hidden");
 });
 
-overlayImageContainer.addEventListener("click", ()=>{
-    overlayImageContainer.classList.add("hidden");
-});
-
 nextImageButton.addEventListener("click", ()=>{
     const currentImageContainer = imagesContainer.querySelector("img[src=\""+overlayImage.getAttribute("src")+"\"]").parentElement;
     const currentImageIndex =  Array.from(imagesContainer.children).lastIndexOf(currentImageContainer);
