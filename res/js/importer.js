@@ -63,10 +63,6 @@ class ImagesImporter {
     }
 
     async createImageContainer(imageSrc, onLoad = null, onError = null) {
-        if(!await this.exists(imageSrc)) {
-            return null;
-        }
-    
         const newImageContainer = new ImageContainer(imageSrc, this.parentElement, onLoad, onError);
         return newImageContainer;
     }
@@ -127,7 +123,7 @@ class ImagesImporter {
     
 
         if(isNaN(imagesCount) || !imagesType) {
-            console.error("ScriptException: the file "+imagesInfoPath+" have not the correct info.");
+            console.error("ScriptException: \""+imagesInfo+"\" is incorrect info for the images.");
             return;
         }
     
