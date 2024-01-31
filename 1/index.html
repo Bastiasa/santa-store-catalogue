@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santa Store | Catálogo DTF 2024 👕👖</title>
 
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../res/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
     <meta name="keywords" content="santa store, ropa, estampado">
@@ -13,10 +13,11 @@
 </head>
 <body>
 
-    <img id="top-logo" src="santa-store-logo.svg" alt="SANTA STORE LOGO">
+    <img id="top-logo" src="../res/santa-store-logo.svg" alt="SANTA STORE LOGO">
     <img id="top-poster" src="catalogue-name.png" alt="Catálogo 1">
 
     <main id="images-container">
+        <script src="../res/js/importer.js" data-images-info="413, webp" data-images-folder="images_folder/"></script>
     </main>
 
     <footer id="copyright-label">&copy; Santa Store 2024</footer>
@@ -26,12 +27,11 @@
 
         <div id="overlay-spin" class="loading-spin hidden"></div>
 
-        <a style="bottom: 10px; right: max(min(30%, calc(50% - 130px)), 10px);" type="button" id="next-image-button"><img src="icons/right-arrow.svg" alt="RIGHT ARROW"></a>
-        <a style="bottom: 10px; left: max(min(30%, calc(50% - 130px)), 10px);" id="prev-image-button"><img src="icons/left-arrow.svg" alt="LEFT ARROW"></a>
-        <a style="bottom: 10px; left: 50%; transform: translateX(-50%);" id="close-overlay-button"><img src="icons/close-button.svg" alt="LEFT ARROW"></a>
+        <a style="bottom: 10px; right: max(min(30%, calc(50% - 130px)), 10px);" type="button" id="next-image-button"><img src="../res/icons/right-arrow.svg" alt="RIGHT ARROW"></a>
+        <a style="bottom: 10px; left: max(min(30%, calc(50% - 130px)), 10px);" id="prev-image-button"><img src="../res/icons/left-arrow.svg" alt="LEFT ARROW"></a>
+        <a style="bottom: 10px; left: 50%; transform: translateX(-50%);" id="close-overlay-button"><img src="../res/icons/close-button.svg" alt="LEFT ARROW"></a>
     </div>
-
-    <script src="activity.js"></script>
     
+    <script src="../res/js/overlay.js"></script>
 </body>
 </html>

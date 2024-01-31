@@ -1,7 +1,7 @@
 body::before {
     content: '';
 
-    background-image: url('background-tile.png');
+    background-image: url('../res/background-tile.png');
     background-size: 32px 32px;
 
     width: 100%;
