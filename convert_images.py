@@ -12,17 +12,17 @@ def escalar_convertir_guardar(imagen_path, salida_path, nuevo_ancho, nuevo_alto,
     img = img.resize((nuevo_ancho, nuevo_alto))
 
     # Crear el nombre de archivo de salida con formato 001.webp, 002.webp, etc.
-    nombre_salida = f"{numero:03d}.{FILE_TYPE}"
+    nombre_salida = f"{numero:03d}.webp"
     ruta_salida = salida_path / nombre_salida
 
     # Guardar la imagen en formato webp
     img.save(ruta_salida, FILE_TYPE.upper())
 
 # Ruta de la carpeta de entrada
-carpeta_entrada = Path("/1/"+input("Carpeta de entrada: "))
+carpeta_entrada = Path(input("Carpeta de entrada: "))
 
 # Ruta de la carpeta de salida
-carpeta_salida = Path("/1/"+input("Carpeta de salida: "))
+carpeta_salida = Path(input("Carpeta de salida: "))
 
 # Crear la carpeta de salida si no existe
 carpeta_salida.mkdir(exist_ok=True)
