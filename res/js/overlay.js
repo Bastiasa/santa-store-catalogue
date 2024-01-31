@@ -137,7 +137,7 @@ class OverlayImageView {
         const containerElement = window.importer.parentElement;
 
         if(containerElement) {
-            const nextIndex = (this.currentIndex + 1 >= containerElement.children.length) ? 0 : this.currentIndex + 1;
+            const nextIndex = (this.currentIndex + 1 >= containerElement.children.length) ? 1 : this.currentIndex + 1;
             this.setImage(containerElement.children[nextIndex].querySelector("img"));
 
         } else {
@@ -154,7 +154,7 @@ class OverlayImageView {
         const containerElement = window.importer.parentElement;
 
         if(containerElement) {
-            const nextIndex = (this.currentIndex - 1 < 1) ? containerElement.children.length-1 : this.currentIndex - 1;
+            const nextIndex = (this.currentIndex - 1 < 2) ? containerElement.children.length-1 : this.currentIndex - 1;
             this.setImage(containerElement.children[nextIndex].querySelector("img"));
 
         } else {
