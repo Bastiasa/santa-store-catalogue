@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="300"
+   viewBox="0 0 800 300.00001"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="catalogue-name.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.70822811"
+     inkscape:cx="396.76482"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:216.65px;line-height:1;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;letter-spacing:0px;fill:#d7043c;fill-opacity:1;stroke:none;stroke-width:135.407;stroke-opacity:1;paint-order:markers stroke fill"
+       x="53.798649"
+       y="238.38428"
+       id="text1"
+       transform="skewX(-11.214084)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="53.798649"
+         y="238.38428"
+         style="stroke-width:135.407">CATÁLOGO 1</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#d7043c;stroke-width:20;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 27.238746,262.62725 H 772.76125"
+       id="path1" />
+  </g>
+</svg>
