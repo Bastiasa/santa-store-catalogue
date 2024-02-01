@@ -115,7 +115,13 @@ class OverlayImageView {
         if(imageElement instanceof Image) {
             this.overlayImage.src = imageElement.getAttribute("src");
             this.overlayImage.alt = imageElement.alt;
+
             this.currentIndex = parseInt(imageElement.getAttribute("data-index"));
+
+            if(isNaN(this.currentIndex)) {
+                this.currentIndex = -1;
+            }
+
             this.showLoadingSpin();
             this.overlayDescription.innerText = "#"+window.importer.formatNumber(this.currentIndex.toString());
 
@@ -157,7 +163,7 @@ class OverlayImageView {
         const containerElement = window.importer.parentElement;
 
         if(containerElement) {
-            const nextIndex = (this.currentIndex - 1 < 2) ? containerElement.children.length-1 : this.currentIndex - 1;
+            const nextIndex = (this.currentIndex - 1 < 1) ? containerElement.children.length-1 : this.currentIndex - 1;
             this.setImage(containerElement.children[nextIndex].querySelector("img"));
 
         } else {
