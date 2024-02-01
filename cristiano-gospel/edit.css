@@ -1,5 +1,5 @@
 div#overlay-img-container > a > img {
-    filter: invert(1);
+    filter: none;
 }
 
 #overlay-img-container {
