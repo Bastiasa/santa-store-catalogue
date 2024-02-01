@@ -1,6 +1,7 @@
 class OverlayImageView {
     overlayContainer;
     overlayImage;
+    overlayDescription;
 
     overlaySpin;
 
@@ -15,6 +16,7 @@ class OverlayImageView {
     constructor() {
         this.overlayContainer = document.getElementById("overlay-img-container");
         this.overlayImage = document.getElementById("overlay-img");
+        this.overlayDescription = document.getElementById("overlay-description");
 
         this.overlaySpin = document.getElementById("overlay-spin");
 
@@ -115,6 +117,7 @@ class OverlayImageView {
             this.overlayImage.alt = imageElement.alt;
             this.currentIndex = parseInt(imageElement.getAttribute("data-index"));
             this.showLoadingSpin();
+            this.overlayDescription.innerText = "#"+window.importer.formatNumber(this.currentIndex.toString());
 
         } else if (typeof imageElement == "string") {
             this.overlayImage.src = imageElement;
