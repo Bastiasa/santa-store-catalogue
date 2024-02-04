@@ -166,4 +166,5 @@ class OverlayImageView {
     }
 }
 
-window.addEventListener("load", ()=>window.overlay = new OverlayImageView());
+//window.addEventListener("load", ()=>window.overlay = new OverlayImageView());
+document.writeln(document.currentScript.src);
